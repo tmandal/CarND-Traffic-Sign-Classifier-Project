@@ -128,4 +128,8 @@ In details, below are bar charts for softmax probabilities for top 5 traffic sig
 
 ![alt text][test_image_results]
 
+The "Speed limit (60km/h)" sign is misclassified as "Vehicles over 3.5 metric tons prohibited". The model appears to have found red circle that is common to these two signs but could not finally distinguish the digits inside.
+The "Speed limit (20km/h) " sign is correctly predicted by the model. The model assigns this correct label a softmax probability of 0.65 and the second label ("Speed limit (20km/h) ") a probability of 0.15. Since these two signs are close enough (diffing by a digit), this is expected.
+The other traffic signs are correctly classified by the model with very high softmax probability.
+
 The model is able to correctly guess 7 of the 8 traffic signs, which gives an accuracy of 87.5%. This is less than 94.3% accuracy observed in test dataset. Since this new testset hand-picked from web is very small, its accuracy can be lower than observed accuracy in a much larger testset.
