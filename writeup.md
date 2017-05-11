@@ -88,7 +88,7 @@ The above model is trained on the training dataset using cross-entropy loss func
 
 A basic LeNet model architecture is chosen first to train a traffic sign classifier in this project. LeNet model was originally developed to recognize hand-written digits in images. Similarly, a traffic sign classifier needs to recognize certain shapes in the images and to classify them into different labels. This is why LeNet model is chosen as a baseline model for recognizing traffic signs. 
 
-However, a basic LeNet model does not produce as high validation accuracy as recommended in this project. It is likely that vanilla LeNet model underfits the dataset. So, the LeNet model is augmented to multiple dropout layers in hidden and fully connected layers with the expectation that randomly dropped neurons in these fully connected layers can learn extra features from their inputs. After this adjustment, modified LeNet model improves validation accuracy beyond the requirement.
+However, a basic LeNet model does not produce as high validation accuracy as recommended in this project. It is likely that vanilla LeNet model underfits the dataset. So, the LeNet model is augmented with multiple dropout layers in hidden and fully connected layers with the expectation that randomly dropped neurons in these fully connected layers can learn extra features from their inputs. After this adjustment, modified LeNet model improves validation accuracy beyond the requirement.
 
 The final model produces validation accuracy of 95.8% and test accuracy of 94.3%. 
 
