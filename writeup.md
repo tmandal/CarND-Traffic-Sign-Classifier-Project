@@ -52,7 +52,7 @@ Here is a plot to display 8 random sample images from each traffic sign class. T
 ### Design and Test a Model Architecture
 
 #### 1. Data preprocessing
-As the input datasets are already sized for 32x32 RGB images, no further image resizing is done. Each of color channels have int8 values (0-225) which need to be normalized before being fed to a neural network. So, each image in training, validation and test datasets is normalized via a function, f(x) = (x - 127.5) / 127.5 to restrict each color channel in [-1.0, 1.0] range. This input range is suitable for training a typical neural network and also allows a network to use simpler relu activations to introduce non-linearity. Finally, training dataset is shuffled to break any pattern sequence in the dataset.
+As the input datasets are already sized for 32x32 RGB images, no further image resizing is done. Each of color channels have int8 values (0-255) which need to be normalized before being fed to a neural network. So, each image in training, validation and test datasets is normalized via a function, f(x) = (x - 127.5) / 127.5 to restrict each color channel in [-1.0, 1.0] range. This input range is suitable for training a typical neural network and also allows a network to use simpler relu activations to introduce non-linearity. Finally, training dataset is shuffled to break any pattern sequence in the dataset.
 
 #### 2. Datasets
 There are three datasets given in this project - training, validation and test datasets. Training datasets are used to train a neural network model. Validation dataset is used to cross-validate the trained model at every epoch of training. Finally test dataset is tested using the final trained model to check accuracy against ground truth.
